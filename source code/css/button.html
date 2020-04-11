@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button</title>
+
+  <style>
+    .button {
+      display: inline-block;
+      padding: 10px;
+      background-color: lightcoral;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .button .ripple {
+      position: absolute;
+      display: block;
+      border-radius: 4px;
+      background-color: #fff;
+      transform: translate(-50%, -50%);
+      animation: animate .3s linear;
+      opacity: .24;
+      display: none;
+    }
+
+    .button:hover .ripple {
+      background-color: bisque;
+    }
+
+    @keyframes animate {
+      0% {
+        width: 0;
+        height: 0;
+      }
+
+      100% {
+        width: 200%;
+        height: 200%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button class="button">
+    <span class="ripple"></span>
+    Material button
+  </button>
+
+  <script>
+    const button = document.querySelector('.button')
+    const ripple = document.querySelector('.ripple')
+    button.addEventListener('mousedown', (e) => {
+      const x = e.x - e.target.offsetLeft
+      const y = e.y - e.target.offsetTop
+      console.log(x, y);
+
+      ripple.style.left = x + 'px'
+      ripple.style.top = y + 'px'
+      ripple.style.display = 'block'
+
+
+    })
+    button.addEventListener('mouseup', () => {
+      setTimeout(() => {
+        ripple.style.display = 'none'
+      }, 300);
+    })
+  </script>
+</body>
+
+</html>
