@@ -1,10 +1,9 @@
 const path = require("path");
-const generateSidebarConfig = require("../../helper/generateSidebarConfig");
+// const generateSidebarConfig = require("../../helper/generateSidebarConfig");
+const generateSidebarConfig = require("vuepress-generatesidebar");
 const pagesDirPath = path.join(__dirname, "../pages");
 const exclude = [".DS_Store", "assets"];
-const sidebarConfig = generateSidebarConfig(pagesDirPath, exclude, {
-  collapsable: false,
-});
+const sidebarConfig = generateSidebarConfig(pagesDirPath, exclude, {});
 module.exports = {
   title: "Blog",
   description: "前端博客,javascript,vue,webpack",
@@ -30,6 +29,7 @@ module.exports = {
           { text: "Vue原理系列", link: "/pages/vue/原理系列/" },
         ],
       },
+      { text: "其他", link: "/pages/其他/" },
       // { text: "Vue原理系列", link: "/pages/vue/" },
       //格式三：跳转至外部网页，需http/https前缀
       { text: "Github", link: "https://github.com/wangtianyu456" },

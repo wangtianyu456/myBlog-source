@@ -4,12 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "dev": "yarn install && vuepress dev docs",
+    "build": "yarn install && vuepress build docs",
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "@vuepress/plugin-google-analytics": "^1.2.0",
     "@vuepress/plugin-nprogress": "^1.2.0"
+  },
+  "devDependencies": {
+    "vuepress-generatesidebar": "^1.0.1"
   }
 }
