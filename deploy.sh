@@ -11,7 +11,7 @@ cd docs/.vuepress/dist
 # 创建git的本地仓库，提交更改
 git init
 git add .
-git commit -m "add: 新增call、apply、bind"
+git commit -m "add: 新增函数柯里化实现"
 
 git remote add origin https://github.com/wangtianyu456/MyBlog.git
 
