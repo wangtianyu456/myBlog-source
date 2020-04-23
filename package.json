@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "yarn install && vuepress dev docs",
-    "build": "yarn install && vuepress build docs",
+    "build": "vuepress build docs",
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
