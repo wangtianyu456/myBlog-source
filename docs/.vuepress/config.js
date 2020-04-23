@@ -9,7 +9,7 @@ module.exports = {
   description: "前端博客,javascript,vue,webpack",
   head: [
     ["link", { rel: "icon", href: "./public/mountain.jpg" }],
-    ["meta", { name: "baidu-site-verification", content: "uwBGQFFodQ" }],
+    ["meta", { name: "baidu-site-verification", content: "4WnagnHyTT" }],
   ],
   base: "/",
   markdown: {
