@@ -13,6 +13,7 @@
     "@vuepress/plugin-nprogress": "^1.2.0"
   },
   "devDependencies": {
+    "vuepress": "^1.4.1",
     "vuepress-generatesidebar": "^1.0.1"
   }
 }
