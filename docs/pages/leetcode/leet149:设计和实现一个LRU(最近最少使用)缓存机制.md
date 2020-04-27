@@ -123,12 +123,15 @@ _LRUCache.prototype.get = function (key) {
  * @return {void}
  */
 _LRUCache.prototype.put = function (key, value) {
-  if (this.cache.size >= this.capacity) {
+  if (this.cache.has(key)) {
+    // 存在即更新（删除后加入）
+    this.cache.delete(key);
+  } else if (this.cache.size >= this.capacity) {
+    // 不存在即加入
+    // 缓存超过最大值，则移除最近没有使用的
     // 这里是因为keys方法返回的是个Iterator对象，所以每调用一次next方法才能获取一次值
     // 这里调用一次next方法就是获取map中的第一项
     this.cache.delete(this.cache.keys().next().value);
-  } else if (this.cache.has(key)) {
-    this.cache.delete(key);
   }
   this.cache.set(key, value);
 };
