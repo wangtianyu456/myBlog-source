@@ -1,4 +1,4 @@
-# leet149:[设计和实现一个 LRU(最近最少使用)缓存机制](https://leetcode-cn.com/problems/lru-cache/)
+# leetcode149:[设计和实现一个 LRU(最近最少使用)缓存机制](https://leetcode-cn.com/problems/lru-cache/)
 
 ## 题目描述
 
