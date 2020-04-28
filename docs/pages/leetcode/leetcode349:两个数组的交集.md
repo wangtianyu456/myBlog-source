@@ -50,3 +50,23 @@ const intersection = function (nums1, nums2) {
   return Array.from(res);
 };
 ```
+
+## 扩展：获取多个数组的交集
+
+```javascript
+const __intersection = (...args) => {
+  if (args.length === 0) {
+    return [];
+  }
+  if (args.length === 1) {
+    return args[0];
+  }
+  return Array.from(
+    new Set(
+      args.reduce((prev, cur) => {
+        return prev.filter((item) => cur.includes(item));
+      }, args[0])
+    )
+  );
+};
+```
