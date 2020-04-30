@@ -9,6 +9,7 @@ module.exports = {
   description: "前端博客,javascript,vue,webpack",
   head: [
     ["link", { rel: "icon", href: "./public/mountain.jpg" }],
+    ["link", { rel: "manifest", href: "/manifest.json" }],
     ["meta", { name: "baidu-site-verification", content: "4WnagnHyTT" }],
   ],
   base: "/",
@@ -79,5 +80,12 @@ module.exports = {
       },
     ],
     "@vuepress/nprogress",
+    [
+      "@vuepress/pwa",
+      {
+        serviceWorker: true,
+        updatePopup: true,
+      },
+    ],
   ],
 };
