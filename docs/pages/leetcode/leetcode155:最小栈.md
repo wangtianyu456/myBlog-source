@@ -8,6 +8,8 @@
 
 ### 解法一：借助辅助栈
 
+除了要构建一个存储所有值的栈`items`之外，还需要构建一个辅助栈`helper`来帮助我们存储一些值。`helper`入栈的规则是，依次把最小值压入栈中，这样最终的`helper`的栈顶存储的就是最小值
+
 ```javascript
 /**
  * initialize your data structure here.
