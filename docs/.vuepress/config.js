@@ -18,32 +18,11 @@ module.exports = {
           "https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap",
       },
     ],
-    [
-      "link",
-      {
-        rel: "stylesheet",
-        href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js",
-      },
-    ],
-    [
-      "link",
-      {
-        rel: "stylesheet",
-        href:
-          "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css",
-      },
-    ],
     [("meta", { name: "baidu-site-verification", content: "4WnagnHyTT" })],
   ],
   base: "/",
   markdown: {
     lineNumbers: true,
-    extendMarkdown: (md) => {
-      md.set({
-        html: true,
-      });
-      md.use(require("markdown-it-katex"));
-    },
   },
   themeConfig: {
     // logo: "./public/img/mountain.jpg",

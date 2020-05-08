@@ -27,7 +27,7 @@ const removeDuplicates = function (S) {
 
 ::: tip 复杂度分析
 
-- 时间复杂度为$O(n)$，$n$为`S.length`
-- 空间复杂度为$O(n)$，即栈的空间
+- 时间复杂度为`O(n)`，`n`为`S.length`
+- 空间复杂度为`O(n)`，即栈的空间
 
 :::

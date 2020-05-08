@@ -35,8 +35,8 @@ const lengthOfLongestSubstring = function (s) {
 
 ::: tip 复杂度分析
 
-- 时间复杂度为 $O(n^2)$，因为`indexOf`本质上也是遍历，它的时间复杂度也是 $O(n)$
-- 空间复杂度就是维护的数组和 `max` 变量，`max` 是常量，数组是 $O(n)$
+- 时间复杂度为 `O(n^2)`，因为`indexOf`本质上也是遍历，它的时间复杂度也是 `O(n)`
+- 空间复杂度就是维护的数组和 `max` 变量，`max` 是常量，数组是 `O(n)`
 
 :::
 
@@ -62,8 +62,8 @@ const lengthOfLongestSubstring = function (s) {
 
 和第一种方法相同
 
-- 时间复杂度为 $O(n^2)$，因为`indexOf`本质上也是遍历，它的时间复杂度也是 $O(n)$
-- 空间复杂度都是常量$O(1)$
+- 时间复杂度为 `O(n^2)`，因为`indexOf`本质上也是遍历，它的时间复杂度也是 `O(n)`
+- 空间复杂度都是常量`O(1)`
 
 :::
 
@@ -92,7 +92,7 @@ const lengthOfLongestSubstring = function (s) {
 
 ::: tip 复杂度分析
 
-- 其实就是利用 `map` 的 `get` 方法是 $O(1)$的时间复杂度，
-- 空间复杂度`map`存储是 $O(n)$
+- 其实就是利用 `map` 的 `get` 方法是 `O(1)`的时间复杂度，
+- 空间复杂度`map`存储是 `O(n)`
 
 :::

@@ -15,7 +15,6 @@
   "devDependencies": {
     "@vuepress/plugin-pwa": "^1.4.1",
     "vuepress": "^1.4.1",
-    "vuepress-generatesidebar": "^1.0.1",
-    "markdown-it-katex": "^2.0.3"
+    "vuepress-generatesidebar": "^1.0.1"
   }
 }
