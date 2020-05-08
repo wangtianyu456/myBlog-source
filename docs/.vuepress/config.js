@@ -22,14 +22,15 @@ module.exports = {
       "link",
       {
         rel: "stylesheet",
-        href: "https://cdn.bootcdn.net/ajax/libs/KaTeX/0.11.1/katex.min.css",
+        href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js",
       },
     ],
     [
       "link",
       {
         rel: "stylesheet",
-        href: "https://cdn.bootcdn.net/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css",
       },
     ],
     [("meta", { name: "baidu-site-verification", content: "4WnagnHyTT" })],
