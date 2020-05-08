@@ -23,6 +23,12 @@ module.exports = {
   base: "/",
   markdown: {
     lineNumbers: true,
+    extendMarkdown: (md) => {
+      md.set({
+        html: true,
+      });
+      md.use(require("markdown-it-katex"));
+    },
   },
   themeConfig: {
     // logo: "./public/img/mountain.jpg",
