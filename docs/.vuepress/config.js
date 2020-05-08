@@ -10,6 +10,14 @@ module.exports = {
   head: [
     ["link", { rel: "icon", href: "./public/mountain.jpg" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+      },
+    ],
     ["meta", { name: "baidu-site-verification", content: "4WnagnHyTT" }],
   ],
   base: "/",
