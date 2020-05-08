@@ -18,7 +18,21 @@ module.exports = {
           "https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap",
       },
     ],
-    ["meta", { name: "baidu-site-verification", content: "4WnagnHyTT" }],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.bootcdn.net/ajax/libs/KaTeX/0.11.1/katex.min.css",
+      },
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.bootcdn.net/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css",
+      },
+    ],
+    [("meta", { name: "baidu-site-verification", content: "4WnagnHyTT" })],
   ],
   base: "/",
   markdown: {
