@@ -36,7 +36,10 @@ const longestCommonPrefix = function (strs) {
 
 :::
 
-### 解法二：分治策略，归并思想
+### 解法二：筛选出最大和最小字符串来进行比较
+
+- 字符串比较大小时是按照字母的 ascii 码来做比较的，因此可以根据此来选出最大和最小的字符串
+- 如果最大值和最小值都有公共前缀，那么他就一定是所有字符串的公共前缀
 
 ```javascript
 const longestCommonPrefix = function (strs) {
@@ -48,7 +51,6 @@ const longestCommonPrefix = function (strs) {
     if (strs[min] > strs[i]) min = i;
     if (strs[max] < strs[i]) max = i;
   }
-  console.log(strs[max], strs[min]);
   for (let j = 0; j < strs[min].length; j++) {
     if (strs[min].charAt(j) !== strs[max].charAt(j)) {
       return strs[min].substring(0, j);
@@ -64,3 +66,43 @@ const longestCommonPrefix = function (strs) {
 - 空间复杂度 `O(1)` -- `min` 和 `max` 的空间，是常数
 
 :::
+
+### 解法三：分治策略，归并思想
+
+这里就是将原本的`strs`，拆分成两两一对，然后分别去进行比较，然后将这两两一对中选出的最长公共前缀再去进行比较，这样最终筛选出来的就是数组中字符串的最长公共前缀了
+
+```javascript
+const __longestCommonPrefix = (strs) => {
+  if (strs === null || strs.length === 0) return "";
+  return lCPrefixRec(strs);
+};
+/**
+ * - 将数组从中间拆分，递归直到最终的数组长度为1，返回当前的字符串
+ * - 然后拿字符串去两两比较
+ * @param {string[]} arr
+ */
+function lCPrefixRec(arr) {
+  const length = arr.length;
+  if (length === 1) {
+    return arr[0];
+  }
+  const mid = Math.floor(length / 2);
+  const left = arr.slice(0, mid);
+  const right = arr.slice(mid, length);
+  return lCPrefixTwo(lCPrefixRec(left), lCPrefixRec(right));
+}
+/**
+ * 比较两个字符串，选出公共前缀
+ * @param {string} str1
+ * @param {string} str2
+ */
+function lCPrefixTwo(str1, str2) {
+  let j = 0;
+  for (; j < str1.length && j < str2.length; j++) {
+    if (str1.charAt(j) !== str2.charAt(j)) {
+      break;
+    }
+  }
+  return str1.substring(0, j);
+}
+```
