@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode206](../assets/img/leetcode206_reverseList.png)
+![leetcode206](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode206_reverseList.png)
 
 ## 梳理思路
 

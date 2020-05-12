@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode1047](../assets/img/leetcode1047_removeDuplicates.png)
+![leetcode1047](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode1047_removeDuplicates.png)
 
 ## 梳理思路
 

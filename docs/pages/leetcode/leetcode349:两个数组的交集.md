@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode349](../assets/img/leetcode349_intersection.png)
+![leetcode349](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode349_intersection.png)
 
 ## 梳理思路
 

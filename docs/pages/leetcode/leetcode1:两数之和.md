@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode1](../assets/img/leetcode1_twoSum.png)
+![leetcode1](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode1_twoSum.png)
 
 ## 梳理思路
 

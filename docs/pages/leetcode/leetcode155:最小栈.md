@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode155](../assets/img/leetcode155_minStack.png)
+![leetcode155](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode155_minStack.png)
 
 ## 梳理思路
 

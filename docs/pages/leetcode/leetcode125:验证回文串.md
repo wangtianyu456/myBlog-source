@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode125](../assets/img/leetcode125_isPalindrome.png)
+![leetcode125](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode125_isPalindrome.png)
 
 ## 梳理思路
 

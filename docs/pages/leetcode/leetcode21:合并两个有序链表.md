@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode21](../assets/img/leetcode21_mergeTowLists.png)
+![leetcode21](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode21_mergeTowLists.png)
 
 ## 梳理思路
 

@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode141](../assets/img/leetcode141_hasCycle.png)
+![leetcode141](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode141_hasCycle.png)
 
 ## 梳理思路
 

@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode20](../assets/img/leetcode20_isValid.png)
+![leetcode20](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode20_isValid.png)
 
 ## 梳理思路
 

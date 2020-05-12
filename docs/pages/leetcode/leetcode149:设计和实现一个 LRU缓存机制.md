@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode149](../assets/img/leetcode149_LRUCache.png)
+![leetcode149](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode149_LRUCache.png)
 
 ## 梳理思路
 

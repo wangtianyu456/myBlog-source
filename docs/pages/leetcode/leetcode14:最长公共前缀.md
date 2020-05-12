@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode14](../assets/img/leetcode14_longestCommonPrefix.png)
+![leetcode14](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode14_longestCommonPrefix.png)
 
 ## 梳理思路
 

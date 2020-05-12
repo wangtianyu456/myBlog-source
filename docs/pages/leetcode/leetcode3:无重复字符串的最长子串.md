@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode3](../assets/img/leetcode3_lengthOfLongestSubstring.png)
+![leetcode3](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode3_lengthOfLongestSubstring.png)
 
 ## 梳理思路
 

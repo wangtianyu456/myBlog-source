@@ -2,7 +2,7 @@
 
 ## 题目描述
 
-![leetcode151](../assets/img/leetcode151_reverseWords.png)
+![leetcode151](https://blog-1256985533.cos.ap-nanjing.myqcloud.com/img/leetcode151_reverseWords.png)
 
 ## 梳理思路
 
