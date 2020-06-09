@@ -12,18 +12,18 @@
 
 ```javascript
 var maxSlidingWindow = function (nums, k) {
-  if (k === 1) return nums;
-  const max = [];
-  const arr = [];
+  if (k === 1) return nums
+  const max = []
+  const arr = []
   for (let i = 0; i < nums.length; i++) {
-    arr.push(nums[i]);
+    arr.push(nums[i])
     if (i >= k - 1) {
-      max.push(Math.max(...arr));
-      arr.shift();
+      max.push(Math.max(...arr))
+      arr.shift()
     }
   }
-  return max;
-};
+  return max
+}
 ```
 
 ### 解法二：利用双端队列
@@ -37,25 +37,25 @@ var maxSlidingWindow = function (nums, k) {
 
 ```javascript
 var maxSlidingWindow = function (nums, k) {
-  const deque = [];
-  const result = [];
+  const deque = []
+  const result = []
   for (let i = 0; i < nums.length; i++) {
     // 当滑动窗口的大小超出限制的时候，删除队列头部
     if (i - deque[0] >= k) {
-      deque.shift();
+      deque.shift()
     }
     // 只要遇到比当前队列末尾的值大的值就把队列末尾的值删除，直到队列中不再存在比当前值更大的值，在把当前最大的值添加进去
     // 如果遇到的比队列末尾更小的值，那么就直接放入队列末尾
-    // 使得队列时钟维持在递减的顺序，队头是最大值，队尾是最小值
+    // 使得队列始终维持在递减的顺序，队头是最大值，队尾是最小值
     while (nums[deque[deque.length - 1]] <= nums[i]) {
-      deque.pop();
+      deque.pop()
     }
-    deque.push(i);
-    // 当i大于等于k-1的时候，也就是当滑动窗口的项满足k的大小的时候，每次在添加完项之后，都会吧
+    deque.push(i)
+    // 当i大于等于k-1的时候，也就是当滑动窗口的项满足k的大小的时候，每次在添加完项之后，都会把当前队列中的最大值取出来
     if (i >= k - 1) {
-      result.push(nums[deque[0]]);
+      result.push(nums[deque[0]])
     }
   }
-  return result;
-};
+  return result
+}
 ```
