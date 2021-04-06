@@ -1,48 +1,49 @@
-const path = require("path");
+const path = require('path')
 // const generateSidebarConfig = require("../../helper/generateSidebarConfig");
-const generateSidebarConfig = require("vuepress-generatesidebar");
-const pagesDirPath = path.join(__dirname, "../pages");
-const exclude = [".DS_Store", "assets"];
-const sidebarConfig = generateSidebarConfig(pagesDirPath, exclude, {});
+const generateSidebarConfig = require('vuepress-generatesidebar')
+const pagesDirPath = path.join(__dirname, '../pages')
+const exclude = ['.DS_Store', 'assets']
+const sidebarConfig = generateSidebarConfig(pagesDirPath, exclude, {})
 module.exports = {
-  title: "Blog",
-  description: "前端博客,javascript,vue,webpack",
+  title: 'Blog',
+  description: '前端博客,javascript,vue,webpack',
   head: [
-    ["link", { rel: "icon", href: "./public/mountain.jpg" }],
-    ["link", { rel: "manifest", href: "/manifest.json" }],
+    ['link', { rel: 'icon', href: './public/mountain.jpg' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
     [
-      "link",
+      'link',
       {
-        rel: "stylesheet",
+        rel: 'stylesheet',
         href:
-          "https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+          'https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap',
       },
     ],
-    [("meta", { name: "baidu-site-verification", content: "4WnagnHyTT" })],
+    [('meta', { name: 'baidu-site-verification', content: '4WnagnHyTT' })],
   ],
-  base: "/",
+  base: '/',
   markdown: {
     lineNumbers: true,
   },
   themeConfig: {
     // logo: "./public/img/mountain.jpg",
-    lastUpdated: "Last Updated",
+    lastUpdated: 'Last Updated',
     nav: [
-      { text: "首页", link: "/" },
-      { text: "js原理系列", link: "/pages/javascript/" },
+      { text: '首页', link: '/' },
+      { text: 'js原理系列', link: '/pages/javascript/' },
       {
-        text: "Vue",
-        ariaLabel: "vue",
+        text: 'Vue',
+        ariaLabel: 'vue',
         items: [
-          { text: "Vue进阶", link: "/pages/vue/进阶/" },
-          { text: "Vue原理系列", link: "/pages/vue/原理系列/" },
+          { text: 'Vue进阶', link: '/pages/vue/进阶/' },
+          { text: 'Vue原理系列', link: '/pages/vue/原理系列/' },
         ],
       },
-      { text: "leetcode", link: "/pages/leetcode/" },
-      { text: "其他", link: "/pages/其他/" },
+      { text: '算法', link: '/pages/算法/' },
+      { text: 'leetcode', link: '/pages/leetcode/' },
+      { text: '其他', link: '/pages/其他/' },
       // { text: "Vue原理系列", link: "/pages/vue/" },
       //格式三：跳转至外部网页，需http/https前缀
-      { text: "Github", link: "https://github.com/wangtianyu456" },
+      { text: 'Github', link: 'https://github.com/wangtianyu456' },
     ],
     //侧边导航栏：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
     // sidebar: {
@@ -82,18 +83,18 @@ module.exports = {
   },
   plugins: [
     [
-      "@vuepress/google-analytics",
+      '@vuepress/google-analytics',
       {
-        ga: "UA-153554262-1", //你的Google Analytics ID
+        ga: 'UA-153554262-1', //你的Google Analytics ID
       },
     ],
-    "@vuepress/nprogress",
+    '@vuepress/nprogress',
     [
-      "@vuepress/pwa",
+      '@vuepress/pwa',
       {
         serviceWorker: true,
         updatePopup: true,
       },
     ],
   ],
-};
+}
