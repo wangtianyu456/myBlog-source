@@ -41,6 +41,7 @@ module.exports = {
       { text: '算法', link: '/pages/算法/' },
       { text: 'leetcode', link: '/pages/leetcode/' },
       { text: '其他', link: '/pages/其他/' },
+      { text: '踩坑', link: '/pages/踩坑/' },
       // { text: "Vue原理系列", link: "/pages/vue/" },
       //格式三：跳转至外部网页，需http/https前缀
       { text: 'Github', link: 'https://github.com/wangtianyu456' },
